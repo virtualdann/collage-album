@@ -7,7 +7,7 @@ const Index = () => {
 
     const CLIENT_ID = 'b43106e895fe43fab2f473a1fac47dc3'
     // const CLIENT_SECRET = '3d92334306884ea291a919cc332c9130'
-    const REDIRECT_URI = 'http://localhost:5173'
+    const REDIRECT_URI = 'https://spotify-album-coll.onrender.com/'
     const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize'
     const RESPONSE_TYPE = 'token'
     const SCOPE = 'user-top-read'
