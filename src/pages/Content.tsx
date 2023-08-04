@@ -58,7 +58,7 @@ const Content = () => {
     }; 
 
     useEffect(() => {
-        const tok = window.localStorage.getItem("token") || "";
+        const tok = window.sessionStorage.getItem("token") || "";
         console.log(tok)
         setToken(tok)
 

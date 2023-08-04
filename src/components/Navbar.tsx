@@ -7,7 +7,7 @@ const Navbar = () => {
     const [token, setToken] = useState("")
     
     useEffect(() => {
-      setToken(window.localStorage.getItem("token") || "")
+      setToken(window.sessionStorage.getItem("token") || "")
     
     }, [])
     

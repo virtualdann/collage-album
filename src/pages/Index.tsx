@@ -24,13 +24,13 @@ const Index = () => {
 
     useEffect(() => {
       const hash = window.location.hash
-      let token = window.localStorage.getItem("token")
+      let token = window.sessionStorage.getItem("token")
 
       if (!token && hash) {
         token = getToken()
 
         window.location.hash = ""
-        window.localStorage.setItem("token", token ? token : "")
+        window.sessionStorage.setItem("token", token ? token : "")
       }
 
       setToken(token ? token : '')
