@@ -9,6 +9,7 @@ import { toPng } from "html-to-image";
 import { useRef } from "react";
 
 import {Album} from '../components/index'
+import LogoutButton from "../components/LogoutButton";
 
 const Content = () => {
 
@@ -172,6 +173,7 @@ const Content = () => {
             </div>
 
             <button onClick={htmlToImageConvert} id="download-btn">Download Image</button>
+            <LogoutButton setToken={setToken} />
         </div>
     )
 }

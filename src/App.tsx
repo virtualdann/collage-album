@@ -6,7 +6,7 @@ import PrivacyPage from './pages/Privacy'
 
 // import { getToken, getTracks } from "./calls/apiCall"
 // import {useEffect, useState} from 'react'
-import Navbar from './components/Navbar'
+// import Navbar from './components/Navbar'
 
 
 
@@ -14,7 +14,7 @@ function App() {
   
   return (
     <div className=' w-[100vw]'>
-      <Navbar />
+      {/* <Navbar /> */}
         <Routes>
           <Route path="/" element={<Index />}  />
           <Route path="/content" element={<Content />}  />
