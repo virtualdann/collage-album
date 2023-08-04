@@ -13,7 +13,7 @@ const LogoutButton : React.FC<TokenProps> = ({setToken}) => {
 
     const logout = () => {
         setToken("")
-        window.localStorage.removeItem("token")
+        window.sessionStorage.removeItem("token")
         navigate('/')
     }
 
